@@ -1,23 +1,99 @@
-# SAIFIX
+<div id="top"></div>
 
-Interactive, menu-driven OSINT toolkit (Node.js).
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <!-- Yahan apne logo ka path daalein -->
+  <img src="./images/logo-main.png" alt="SAIFIX Logo" height="150px">
 
-## Install & Run
-```bash
-npm install
-npm start        # or: node bin/saifix.js
-```
+<h1 align="center">🛡️ SAIFIX OSINT</h1>
 
-Menu mein number type karein (1-16), phir tool input poochega, result dikhega,
-aur menu wapas aayega. `0` dabane par exit.
+  <p align="center">
+    A powerful, menu-driven OSINT (Open-Source Intelligence) tool created by <b>Saif Ali (SAIFIX7)</b>.
+    <br />
+    <a href="https://github.com/saifix7/Saifix-osint/issues/new"><strong>Report Bug</strong></a>
+    ·
+    <a href="https://github.com/saifix7/Saifix-osint/issues"><strong>Request Feature</strong></a>
+  </p>
 
-Direct flags bhi kaam karte hain, e.g. `node bin/saifix.js -p 8.8.8.8`, `node bin/saifix.js -h`.
+  <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/saifix7/Saifix-osint?style=flat-square&color=blue">
+  <img alt="GitHub forks" src="https://img.shields.io/github/forks/saifix7/Saifix-osint?style=flat-square&color=green">
+  <img alt="Node Version" src="https://img.shields.io/badge/Node.js-%3E%3D%2012-brightgreen?style=flat-square&logo=node.js">
+  <img alt="License" src="https://img.shields.io/badge/License-MIT-purple?style=flat-square">
+  <br />
+  <br />
+</div>
 
-## Features
-1 User Recon · 2 Email Finder · 3 Useragent · 4 Whois · 5 Insta Recon · 6 IP Lookup ·
-7 Port Scan · 8 Website Age · 9 Header Info · 10 Website Scan · 11 Git Recon ·
-12 URL Expander · 13 Subdomain · 14 Exif Metadata · 15 DNS Records · 16 YouTube Metadata
+<!-- TABLE OF CONTENTS -->
+<details>
+  <summary>Table of Contents</summary>
+  <ol>
+    <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#getting-started">Getting Started</a>
+      <ul>
+        <li><a href="#prerequisites">Prerequisites</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#usage">Usage</a>
+      <ul>
+        <li><a href="#interactive-menu">Interactive Menu</a></li>
+        <li><a href="#command-line-options">Command Line Options</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#license">License</a></li>
+  </ol>
+</details>
 
-Results `./results/` folder mein save hote hain. Subdomain Recon (`-c`) ke liye `amass` chahiye.
+<!-- ABOUT THE PROJECT -->
+## 📌 About The Project
 
-Based on the MIT-licensed project by DevXprite.
+**Saifix OSINT** is an enhanced, powerful, and user-friendly Open-Source Intelligence tool. It is based on the original `infoooze` project, completely revamped and upgraded by **Saif Ali (SAIFIX7)**.
+
+The core purpose of this tool is to quickly and easily gather public information about a specific target. It allows users to look up details about websites, IP addresses, usernames, emails, and much more.
+
+### 🌟 The Big Upgrade
+The biggest and most noticeable upgrade in this version is the **Interactive Menu System**. 
+You no longer need to memorize complex commands or flags! Just start the tool, choose a number from the menu, enter your target (like an IP or domain), and let the tool do all the magic. It is designed to be beginner-friendly while still powerful for advanced users.
+
+---
+
+<!-- FEATURES -->
+## 🚀 Features of Saifix OSINT
+
+Here is the complete list of what Saifix OSINT can do:
+
+1. **Interactive Menu System (New & Enhanced)**
+2. **InstaGram Recon**: Gather information on an Instagram user.
+3. **Subdomain Scanner**: Find and enumerate subdomains of a given website.
+4. **Ports Scan**: Search for open ports on a target.
+5. **User Recon**: Search for a username across multiple social media platforms.
+6. **Mail Finder**: Search for an email address associated with a username or domain.
+7. **URL Scanner**: Analyze suspicious URLs for potential threats.
+8. **Exif Metadata**: Extract EXIF data from images (camera model, date, location).
+9. **Whois Lookup**: Find registration information for a specific domain.
+10. **IP Lookup**: Find location and hostname info for a specific IP address.
+11. **Header Info**: View and analyze HTTP headers of a website.
+12. **Website Age**: Find out how long a website has been registered.
+13. **DNS Lookup**: View DNS records for a domain.
+14. **Git Recon**: Gather info on a GitHub user (repos, contributions, etc.).
+15. **URL Expander**: Expand shortened URLs to see their real destination.
+16. **Youtube Lookup**: View metadata of a YouTube video (title, tags, etc.).
+17. **UserAgent Lookup**: Identify the browser and device type.
+
+---
+
+<!-- GETTING STARTED -->
+## 🛠️ Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+You need **Node.js** (version 12 or later) installed on your system to run this tool.
+
+- For **Termux** (Android), install it using:
+  ```sh
+  pkg install nodejs-lts
