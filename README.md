@@ -3,13 +3,14 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <!-- Yahan apne logo ka path daalein -->
-  <img src="./images/logo-main.png" alt="SAIFIX Logo" height="150px">
-
-<h1 align="center">🛡️ SAIFIX OSINT</h1>
+  <!-- Maine yahan koi image nahi rakhi taaki infoooze ka logo na aaye. Aap apna logo yahan add kar sakte hain. -->
+  <h1 align="center" style="font-size: 50px; font-weight: bold; color: #7c3aed; letter-spacing: 2px;">SAIFIX OSINT</h1>
+  <p align="center">
+    <b>One Brand, Infinite Possibilities</b>
+  </p>
 
   <p align="center">
-    A powerful, menu-driven OSINT (Open-Source Intelligence) tool created by <b>Saif Ali (SAIFIX7)</b>.
+    A powerful, interactive OSINT (Open-Source Intelligence) tool created by <b>Saif Ali (SAIFIX7)</b>.
     <br />
     <a href="https://github.com/saifix7/Saifix-osint/issues/new"><strong>Report Bug</strong></a>
     ·
@@ -50,11 +51,8 @@
 <!-- ABOUT THE PROJECT -->
 ## 📌 About The Project
 
-**Saifix OSINT** is an enhanced, powerful, and user-friendly Open-Source Intelligence tool. It is based on the original `infoooze` project, completely revamped and upgraded by **Saif Ali (SAIFIX7)**.
+**Saifix OSINT** is an enhanced, powerful, and user-friendly Open-Source Intelligence tool. It allows you to quickly and easily gather information about a specific target, including websites, IP addresses, usernames, and more.
 
-The core purpose of this tool is to quickly and easily gather public information about a specific target. It allows users to look up details about websites, IP addresses, usernames, emails, and much more.
-
-### 🌟 The Big Upgrade
 The biggest and most noticeable upgrade in this version is the **Interactive Menu System**. 
 You no longer need to memorize complex commands or flags! Just start the tool, choose a number from the menu, enter your target (like an IP or domain), and let the tool do all the magic. It is designed to be beginner-friendly while still powerful for advanced users.
 
@@ -94,6 +92,7 @@ To get a local copy up and running, follow these simple steps.
 
 You need **Node.js** (version 12 or later) installed on your system to run this tool.
 
-- For **Termux** (Android), install it using:
+- For **Termux** (Android), run these commands in Termux:
   ```sh
-  pkg install nodejs-lts
+  pkg update && pkg upgrade -y
+  pkg install nodejs-lts git -y
