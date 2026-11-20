@@ -1,0 +1,3 @@
+tasks:
+  - init: npm install infoooze -g
+    command: infoooze
